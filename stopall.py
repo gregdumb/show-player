@@ -1,6 +1,6 @@
 import psutil
 
-PROCNAME = "python.exe"
+PROCNAME = "python"
 
 print("Killing")
 

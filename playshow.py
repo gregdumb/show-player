@@ -23,7 +23,7 @@ next_frame = 0
 ON = GPIO.HIGH
 OFF = GPIO.LOW
 
-pins = [4, 17, 27, 22]
+pins = [4, 17, 27, 22, 5, 6, 13, 26]
 
 GPIO.setmode(GPIO.BCM)
 
@@ -35,7 +35,8 @@ for pin in pins:
 
 def execute_pinout(states):
     print(str(states))
-    for i in range(0, 4): # REPLACE 3 with range(states)
+    max_range = min(len(pins), len(states))
+    for i in range(0, 8): # REPLACE 3 with range(states)
         if states[i] == '0':
             #led.off()
             #print('Turning off')
