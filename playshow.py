@@ -35,7 +35,7 @@ for pin in pins:
 
 def execute_pinout(states):
     print(str(states))
-    for i in range(0, 3): # REPLACE 3 with range(states)
+    for i in range(0, 4): # REPLACE 3 with range(states)
         if states[i] == '0':
             #led.off()
             #print('Turning off')
