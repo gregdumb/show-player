@@ -1,6 +1,4 @@
-import time
 import sys
-from pygame import mixer
 import gpio_player as gpio
 
 if(len(sys.argv) < 3):

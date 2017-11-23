@@ -1,5 +1,4 @@
 import time
-import sys
 from pygame import mixer
 import RPi.GPIO as GPIO
 
@@ -65,3 +64,6 @@ def play_show(audio_path, show_path):
             next_frame += 1
             if next_frame == len(event_raw):
                 break
+    
+    mixer.music.fadeout(1000)
+    execute_pinout([1,1,1,1,1,1,1,1])
