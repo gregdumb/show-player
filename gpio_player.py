@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 ON = GPIO.HIGH
 OFF = GPIO.LOW
 
-pins = [4, 17, 27, 22, 5, 6, 13, 26]
+pins = [4,17,18,27,22,23,24,25]  #4, 17, 27, 22, 5, 6, 13, 26]
 
 GPIO.setmode(GPIO.BCM)
 
